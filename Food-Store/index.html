@@ -8,34 +8,243 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- Header Section -->
+    
+<header>
+    <nav class="py-5">
+
+        <!-- Laptop Navbar -->
+        <div class="hidden md:block">
+            <div class="w-[75%] mx-auto">
+                <div class="bg-white rounded-full flex justify-evenly items-center px-3 py-2">
+                    <img src="./logo-food.jpg" class="w-20 h-10 object-contain" alt="Food Logo">
+
+                    <a href="">Home</a>
+                    <a href="">Why Choose Us</a>
+                    <a href="">Explore Menu</a>
+                    <a href="">Delivery & Payment</a>
+                    <a href="">Follow us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navbar -->
+        <div class="md:hidden fixed bottom-4 left-0 w-full z-50 px-3">
+            <div class="bg-white rounded-full flex justify-around items-center px-2 py-3 shadow-lg">
+
+                <a href="" class="text-sm font-semibold">Home</a>
+                <a href="" class="text-sm font-semibold">Why Choose</a>
+                <a href="" class="text-sm font-semibold">Menu</a>
+                <a href="" class="text-sm font-semibold">Delivery</a>
+                <a href="" class="text-sm font-semibold">Follow</a>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="max-w-full bg-[url('./fl2.jpg')] bg-cover bg-center min-h-screen">
+
+        <div class="w-[90%] md:w-[75%] mx-auto">
+            <div class="flex flex-col justify-end items-center min-h-screen pb-10 text-center">
+
+                <h1 class="text-3xl md:text-[45px] font-bold text-white">
+                    Get Delicious Food at Anytime
+                </h1>
+
+                <p class="text-xl md:text-[34px] text-white pt-5">
+                    Eat Smart and Healthy
+                </p>
+
+                <div class="flex gap-4 mt-5">
+                    <button class="text-sm md:text-base bg-[#cdb000] text-white rounded-lg px-5 py-2">
+                        View Menu
+                    </button>
+
+                    <button class="text-sm md:text-base bg-[#cdb000] text-white rounded-lg px-5 py-2">
+                        Order Now
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
     <!-- Why choose us section -->
-     <section class="py-10">
+     <section class="py-10 bg-slate-50">
         <div class="max-w-[100%] space-y-3">
-            <div>
-                <h2 class="text-[28px] text-[#183b56]">Why Choose Us?</h2>
+            <div class="w-[75%] mx-auto grid grid-cols-1">
+                <h2 class="text-[28px] text-[#183b56] font-bold">Why Choose Us?</h2>
                 <p class="text-[16px] text-[#5a7184]">We use both original recipes and classic versions of famous food items.</p>
             </div>
-
             <div class="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg"> 
-                <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/food-serve.png">
+                <img src="./fs-1.jpg">
                 <h2 class="text-[22px] text-[#323f4b]">Food Service</h2>
                 <p class="text-[16px] text-[#7b8794] text-justify">Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you the nothing less than perfect.</p>
                 </div>
                 <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg"> 
-                <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/food-serve.png">
+                <img src="./fs-1.jpg">
                 <h2 class="text-[22px] text-[#323f4b]">Fresh Food</h2>
                 <p class="text-[16px] text-[#7b8794] text-justify">The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.</p>
                 </div>
                 <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg"> 
-                <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/food-serve.png">
+                <img src="./fs-1.jpg">
                 <h2 class="text-[22px] text-[#323f4b]">Best Offers</h2>
                 <p class="text-[16px] text-[#7b8794] text-justify">Food Coupons & Offers upto <span class="font-bold italic text-[#323f4b]">50% OFF </span>and Exclusive Promo Codes on All Online Food Orders.</p>
                 </div>
-            </div>
-            
+            </div>            
         </div>
      </section>
+     <!-- Explore Menu -->
+     <section class="py-5">
+        <div class="max-w-[100%] space-y-3">
+            <div class="w-[75%] mx-auto grid grid-cols-1">
+            <h2 class="text-[28px] text-[#183b56] font-bold">Explore Menu</h2>
+            </div>
+            <div class="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg">
+            <img src="./nv-starter.jpg">
+            <p class="text-[18px] text-[#323f4b]">Non-Veg Starters</p>
+            <button class="text-[14px] text-[#d3b229] flex gap-2 text-[500] hover:underline hover:text-[#0056b3]">View All <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d3b229" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg">
+            <img src="./nv-starter.jpg">
+            <p class="text-[18px] text-[#323f4b]">Veg Starters</p>
+            <button class="text-[14px] text-[#d3b229] flex gap-2 text-[500] hover:underline hover:text-[#0056b3]">View All <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d3b229" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg">
+            <img src="./nv-starter.jpg">
+            <p class="text-[18px] text-[#323f4b]">Soups</p>
+            <button class="text-[14px] text-[#d3b229] flex gap-2 text-[500] hover:underline hover:text-[#0056b3]">View All <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d3b229" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg">
+            <img src="./nv-starter.jpg">
+            <p class="text-[18px] text-[#323f4b]">Fish & Sea food</p>
+            <button class="text-[14px] text-[#d3b229] flex gap-2 text-[500] hover:underline hover:text-[#0056b3]">View All <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d3b229" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg">
+            <img src="./nv-starter.jpg">
+            <p class="text-[18px] text-[#323f4b]">Main Course</p>
+            <button class="text-[14px] text-[#d3b229] flex gap-2 text-[500] hover:underline hover:text-[#0056b3]">View All <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d3b229" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg">
+            <img src="./nv-starter.jpg">
+            <p class="text-[18px] text-[#323f4b]">Noodles</p>
+            <button class="text-[14px] text-[#d3b229] flex gap-2 text-[500] hover:underline hover:text-[#0056b3]">View All <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d3b229" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg">
+            <img src="./nv-starter.jpg">
+            <p class="text-[18px] text-[#323f4b]">Salads</p>
+            <button class="text-[14px] text-[#d3b229] flex gap-2 text-[500] hover:underline hover:text-[#0056b3]">View All <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d3b229" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 gap-3 border rounded-lg">
+            <img src="./nv-starter.jpg">
+            <p class="text-[18px] text-[#323f4b]">Desserts</p>
+            <button class="text-[14px] text-[#d3b229] flex gap-2 text-[500] hover:underline hover:text-[#0056b3]">View All <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d3b229" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Fresh Section -->
+
+     <section class="py-10 bg-slate-50">
+        <div class="max-w-[100%]">
+            <div class="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2"> 
+                <div class="flex justify-center items-center">
+                    <img src="./fresh.jpg" class="w-[400px] h-[200px]"/>
+                </div>
+                <div class="flex flex-col items-start justify-center gap-4">
+                    <h1 class="text-[28px] text-[#183b56] font-bold">Fresh, Healthy, Organic, Delicious Fruits</h1>
+                    <p class="text-[16px] text-[#5a7184]">Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies. Pamper your body and your senses with the true and unadulterated gifts from mother nature. with the true and unadulterated gifts from mother nature.</p>
+                    <button class="text-[16px] bg-[#cdb000] text-white rounded-lg px-5 py-2">Watch Video</button>
+                </div>
+
+            </div>
+        </div>
+     </section>
+
+     <!-- Delivery Section -->
+
+     <section class="py-10">
+        <div class="max-w-[100%]">
+            <div class="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2"> 
+               
+                <div class="flex flex-col items-start justify-center gap-4">
+                    <h1 class="text-[28px] text-[#183b56] font-bold">Delivery and Payment</h1>
+                    <p class="text-[16px] text-[#5a7184]">Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get a 5% discount on every order every time you pay online.</p>
+                    <button class="text-[16px] bg-[#cdb000] text-white rounded-lg px-5 py-2">Order Now</button>
+                    <div class="flex gap-4 ">
+                        <img src="./visa.svg"/> 
+                        <img src="./visa.svg"/>
+                        <img src="./visa.svg"/>
+                        <img src="./visa.svg"/>
+                    </div>
+                </div>
+                 <div class="flex justify-center items-center">
+                    <img src="./delivery.jpg" class="w-[200px] h-[200px]"/>
+                </div>
+
+            </div>
+        </div>
+     </section>
+
+     <!-- Thank you Section -->
+
+     <section class="py-10 bg-slate-50">
+        <div class="max-w-[100%]">
+            <div class="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-2"> 
+                <div class="flex justify-center">
+                    <img src="./gift.jpg" class="w-[400px] h-[200px]"/>
+                </div>
+                <div class="flex flex-col items-start justify-center gap-4">
+                    <h1 class="text-[28px] text-[#183b56] font-bold">Thank you for being a valuable customer to us.</h1>
+                    <p class="text-[16px] text-[#5a7184]">We have a surprise gift for you.</p>
+                    <button class="text-[16px] bg-[#cdb000] text-white rounded-lg px-5 py-2">Redeem Gift</button>
+                    
+                </div>
+                 
+
+            </div>
+        </div>
+     </section>
+
+     <!-- Follow us section -->
+      <section class="py-10" >
+        <div class="max-w-[100%]">
+            <div class="w-[75%] mx-auto grid grid-cols-1">
+                <div>
+                    <h1 class="text-[28px] text-[#183b56] font-bold text-center py-10">Follow Us</h1>
+                </div>
+                <div class="flex justify-center items-center gap-5 pb-10">
+                        <img src="./instagram.svg" class="w-[50px] h-[50px]"/> 
+                        <img src="./facebook.svg" class="w-[50px] h-[50px]"/>
+                        <img src="./whatsapp.svg" class="w-[50px] h-[50px]"/>  
+
+                </div>
+            </div>
+
+        </div>
+      </section>
+      
+       <!-- footer section  -->
+      <footer class="bg-[#0c2437] py-10">
+        <div class="max-w-[100%]">
+            <div class="w-[75%] mx-auto grid grid-cols-1">
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <img src="./logo-food.jpg" class="w-20" alt="">
+                    <p class="text-[16px] text-[#959ead] font-[500]">orderfood@foodmunch.com</p>
+                    <p class="text-[16px] text-[#959ead] ">123 Ayur Vigyan Nagar, New Delhi, India.</p>
+                </div>
+
+            </div>
+        </div>
+      </footer>
+
     
 </body>
 </html>
